@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+
+            /* Fondo con imagen */
+            background-image: url("/assets/img/portada.jpg");
+            /* Cambia por tu imagen */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        /* Botón menú */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: #333;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .dropbtn:hover {
+            background-color: #555;
+        }
+
+        /* Contenido del menú desplegable */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.9);
+            min-width: 180px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+
+        /* Mostrar menú al pasar el mouse */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Contenido centrado */
+        .contenido {
+            margin-top: 150px;
+            /* espacio para la barra fija */
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 15px;
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra de menú -->
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">Menú</button>
+            <div class="dropdown-content">
+                <a href="pagina1.html">Alfredo Galdames</a>
+                <a href="index.html">Edgar Perez</a>
+                <a href="pagina3.html">Gabriel Avila</a>
+                <a href="pagina4.html">Juan Carlos Mella</a>
+                <a href="mt.html">Mauricio Tapia</a>
+                <a href="pagina6.html">Rodrigp Catalan</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="contenido">
+        <h1>Bienvenido a mi Portafolio</h1>
+        <h1>GRUPO 5</h1>
+        <p>Selecciona una opción del menú para navegar.</p>
+    </div>
+</body>
+
+</html>
